@@ -1,7 +1,78 @@
-:root {
-  --main-color: #663399;
-  --secondary-color: #55a630;
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+  font-size: 20px;
+  color: #55a630;
 }
+
 body {
   background-color: black;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: aqua;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: grey;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rebeccapurple4;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: rebeccapurple;
+}
+
+p {
+  color: red;
+  text-align: center;
+  align-self: start;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+}
+
+.information {
+  align-self: flex-start;
+}
+
+.contact {
+  border: indigo dashed 3px;
+}
+
+header * p {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: row-reverse;
+}
+
+.work {
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar {
+  display: flex;
+  justify-content: flex-start;
 }
