@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./assets/style.css" />
+  
+    <link rel="stylesheet" href="assets/style.css" />
     <title>Lowdars Portfoloio</title>
   </head>
   <body>
@@ -11,17 +12,15 @@
       <nav>
         <p>Julian Williams</p>
         <ul>
-          <li><a href="#about">About</a></li>
+          <li><a href="#information">About</a></li>
           <li><a href="#work">Work</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <div >
-      <div class="intro">
+    <div class="intro">
+      <div id="information">
         <p>Thanks For Stopping By! Stay awhile and check it out!</p>
-      </div>
-      <div class="information">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nihil
         tenetur debitis animi eaque doloribus, quas ut et accusamus, dolorum
         tempore error, provident aperiam consectetur! Cumque, dolor! Voluptate
@@ -39,7 +38,7 @@
         />
       </div>
     </div>
-    <section class="work">
+    <section id="work">
       <div class="main">
         <h2>Main App</h2>
         <img src="assets/images/main.jpg" alt="Main app" />
@@ -48,12 +47,12 @@
           this longish, idk man its up to you, cause you is me. Ya know?
         </p>
       </div>
-      <div>
+      <div class="lesser">
         <div>
         <h3>Another App</h3>
         <img src="assets/images/anotherapp.jpg" alt="another app" />
         <p>Shorter description than before but way more to the point.</p>
-      </div>
+        </div>
       <div>
         <h3>Whaddaya Know</h3>
         <img src="assets/images/antoherone.jpg" alt="DJ KHALED" />
@@ -64,8 +63,10 @@
         <img src="assets/images/lastone.jpg" alt="last one" />
         <p>We duh best! Dj khaled approved here man.</p>
       </div>
+      </div>
     </section>
-    <div class="contact">
+    <div id="contact">
+    
       <form
         action="mailto:julian.th.williams@gmail.com"
         method="post"

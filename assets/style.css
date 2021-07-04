@@ -1,8 +1,18 @@
+:root {
+  --main-color: rebeccapurple;
+  --second-color: #55a630;
+  --fun-font: ;
+}
+
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   line-height: 1;
   font-size: 20px;
   color: #55a630;
+}
+
+header {
+  height: 40px;
 }
 
 body {
@@ -20,8 +30,9 @@ li a {
   display: block;
   color: aqua;
   text-align: center;
-  padding: 14px 16px;
+  padding: 8px 16px;
   text-decoration: none;
+  line-height: inherit;
 }
 
 li a:hover {
@@ -33,13 +44,12 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rebeccapurple4;
+  background-color: rebeccapurple;
 }
 
 a {
   display: block;
   padding: 8px;
-  background-color: rebeccapurple;
 }
 
 p {
@@ -51,20 +61,15 @@ p {
 .intro {
   display: flex;
   justify-content: space-around;
+  background-color: aqua;
 }
 
 .information {
   align-self: flex-start;
 }
 
-.contact {
+#contact {
   border: indigo dashed 3px;
-}
-
-header * p {
-  display: flex;
-  align-self: flex-start;
-  flex-direction: row-reverse;
 }
 
 .work {
@@ -74,5 +79,18 @@ header * p {
 
 .avatar {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lesser {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main {
+  background-color: lawngreen;
 }
