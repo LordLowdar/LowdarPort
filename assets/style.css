@@ -1,25 +1,36 @@
 :root {
-  --main-color: rebeccapurple;
-  --second-color: #55a630;
-  --fun-font: ;
+  --background-color: #cad2c5;
+  --main-color: #52796f;
+  --second-color: #84a98c;
+  --fun-font: #354f52;
+  --nav-stag: #2f3e46;
+  --inner-color: #86cca9;
 }
 
 * {
   font-family: Helvetica, sans-serif;
   line-height: 1;
   font-size: 20px;
-  color: #55a630;
+  color: var(--main-color);
 }
 
 header {
   height: 40px;
+  background-color: var(--nav-stag);
+}
+
+#hook {
+  color: var(--fun-font);
+  text-shadow: 2px 2px 5px var(--nav-stag);
+  font-style: italic;
+  font-family: "Bahnschrift";
 }
 
 body {
-  background-color: black;
   margin: 0;
   padding: 0;
   text-align: center;
+  background-color: var(--nav-stag);
 }
 
 li {
@@ -28,7 +39,7 @@ li {
 
 li a {
   display: block;
-  color: aqua;
+  color: var(--second-color);
   text-align: center;
   padding: 8px 16px;
   text-decoration: none;
@@ -36,7 +47,8 @@ li a {
 }
 
 li a:hover {
-  background-color: grey;
+  /* need gradient here */
+  background-color: var(--main-color);
 }
 
 ul {
@@ -44,16 +56,19 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rebeccapurple;
+  display: block;
 }
 
-a {
-  display: block;
-  padding: 8px;
+h2,
+h3 {
+  color: var(--fun-font);
+  text-shadow: 2px 2px 5px var(--nav-stag);
+  font-style: italic;
+  font-family: "Bahnschrift";
 }
 
 p {
-  color: red;
+  color: var(--main-color);
   text-align: center;
   align-self: start;
 }
@@ -61,20 +76,17 @@ p {
 .intro {
   display: flex;
   justify-content: space-around;
-  background-color: aqua;
-}
-
-.information {
-  align-self: flex-start;
+  background-color: var(--inner-color);
 }
 
 #contact {
-  border: indigo dashed 3px;
+  background-color: var(--inner-color);
 }
 
 .work {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 .avatar {
@@ -89,8 +101,11 @@ nav {
 .lesser {
   display: flex;
   justify-content: space-around;
+  background-color: var(--inner-color);
 }
 
 .main {
-  background-color: lawngreen;
+  display: flow-root;
+  justify-content: space-around;
+  background-color: var(--inner-color);
 }
