@@ -10,10 +10,13 @@
 * {
   font-family: Helvetica, sans-serif;
   line-height: 1;
-  font-size: 20px;
+  font-size: 18px;
   color: var(--main-color);
 }
 
+p {
+  text-align: center;
+}
 header {
   height: 40px;
   background-color: var(--nav-stag);
@@ -47,8 +50,7 @@ li a {
 }
 
 li a:hover {
-  /* need gradient here */
-  background-color: var(--main-color);
+  background-image: linear-gradient(var(--main-color), var(--inner-color));
 }
 
 ul {
@@ -57,6 +59,10 @@ ul {
   padding: 0;
   overflow: hidden;
   display: block;
+}
+
+#information {
+  padding: 10%;
 }
 
 h2,
@@ -70,17 +76,17 @@ h3 {
 p {
   color: var(--main-color);
   text-align: center;
-  align-self: start;
 }
 
 .intro {
   display: flex;
   justify-content: space-around;
-  background-color: var(--inner-color);
+  background-image: linear-gradient(var(--inner-color), var(--second-color));
+  flex-wrap: nowrap;
 }
 
 #contact {
-  background-color: var(--inner-color);
+  background-image: linear-gradient(var(--second-color), var(--inner-color));
 }
 
 .work {
@@ -91,7 +97,8 @@ p {
 
 .avatar {
   display: flex;
-  justify-content: flex-end;
+  overflow: hidden;
+  padding: 5%;
 }
 nav {
   display: flex;
@@ -101,11 +108,14 @@ nav {
 .lesser {
   display: flex;
   justify-content: space-around;
-  background-color: var(--inner-color);
+  background-image: linear-gradient(var(--inner-color), var(--second-color));
+  flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 .main {
   display: flow-root;
   justify-content: space-around;
-  background-color: var(--inner-color);
+  background-image: linear-gradient(var(--second-color), var(--inner-color));
+  flex-wrap: nowrap;
 }
