@@ -10,7 +10,6 @@
 * {
   font-family: Helvetica, sans-serif;
   line-height: 1;
-  font-size: 18px;
   color: var(--main-color);
 }
 
@@ -29,6 +28,12 @@ header {
   background-color: var(--nav-stag);
 }
 
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #hook {
   color: var(--fun-font);
   text-shadow: 2px 2px 5px var(--nav-stag);
@@ -43,8 +48,10 @@ body {
   background-color: var(--nav-stag);
 }
 
-li {
-  float: left;
+nav li {
+  display: inline-block;
+  padding-top: 8px;
+  position: relative;
 }
 
 li a {
@@ -54,10 +61,26 @@ li a {
   padding: 8px 16px;
   text-decoration: none;
   line-height: inherit;
+  text-transform: uppercase;
 }
 
-li a:hover {
-  background-image: linear-gradient(var(--main-color), var(--inner-color));
+nav a:hover {
+  color: var(--main-color);
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: var(--main-color);
+  /* position: absolute; */
+  top: 0;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
 }
 
 ul {
@@ -70,6 +93,11 @@ ul {
 
 #information {
   padding: 10%;
+}
+
+#name {
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
 }
 
 h2,
@@ -120,4 +148,10 @@ nav {
   justify-content: space-around;
   background-image: linear-gradient(var(--second-color), var(--inner-color));
   flex-wrap: nowrap;
+}
+
+input[type="text"] {
+  background-color: var(--nav-stag);
+  color: var(--inner-color);
+  width: 30%;
 }
