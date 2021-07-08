@@ -155,3 +155,31 @@ input[type="text"] {
   color: var(--inner-color);
   width: 30%;
 }
+
+@media screen and (max-width: 700px) {
+  header {
+    width: 160%;
+  }
+
+  .intro {
+    width: 160%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main {
+    width: 160%;
+  }
+
+  .lesser {
+    width: 160%;
+  }
+
+  #contact {
+    width: 160%;
+  }
+
+  footer {
+    width: 160%;
+  }
+}
