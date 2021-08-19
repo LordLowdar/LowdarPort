@@ -150,6 +150,11 @@ nav {
   flex-wrap: nowrap;
 }
 
+.repo {
+  font-style: italic;
+  color: var(--fun-font);
+}
+
 input[type="text"] {
   background-color: var(--nav-stag);
   color: var(--inner-color);
